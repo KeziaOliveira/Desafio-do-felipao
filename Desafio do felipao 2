@@ -1,0 +1,22 @@
+// Função que recebe como parâmetro a quantidade de vitórias e derrotas de um jogador
+
+let vit = 200
+let der = 84
+
+aux=rank(vit,der)
+
+    if ( aux < 10 ) { Nivel = "Ferro" }
+    else if ( aux <= 20 ) { Nivel = "Bronze" }
+    else if ( aux <= 50 ) { Nivel = "Prata" }
+    else if ( aux <= 80 ) { Nivel = "Ouro" }
+    else if ( aux <= 90 ) { Nivel = "Diamante" }
+    else if ( aux <= 100 ) { Nivel = "Lendário" }
+    else if ( aux >= 101 ) { Nivel = "Imortal" }
+
+// Saída
+function rank( v,d ){
+    R = v - d
+return R
+}
+
+console.log ("O Herói tem de saldo de "+R, "está no nível de " +Nivel)
