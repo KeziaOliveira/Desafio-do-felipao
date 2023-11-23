@@ -1,0 +1,34 @@
+// Definindo a classe Ataque para ser atribuída á classe Herói
+class Ataque {
+    constructor(tipo) {
+       if (tipo==='mago') {this.ataque='magia'}
+       else if (tipo==='guerreiro') {this.ataque='espada'}
+       else if (tipo==='monge') {this.ataque='artes marciais'}
+       else if (tipo==='ninja') {this.ataque='shuriken'}
+    }
+}
+
+// Definindo a classe Herói com propriedades requeridas
+class Heroi {
+    constructor(nome, idade, tipo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.tipo = tipo;
+        this.ataque = new Ataque(tipo).ataque;
+    }
+
+// Determinando mensagem a ser exibida
+exibirInfo() {
+    console.log(`O ${this.tipo} atacou usando ${this.ataque}`);}
+}
+
+// Atribuindo características aos personagens para testar o código
+const personagens = [
+    new Heroi ("BobMarley", 200, "mago"),
+    new Heroi ("Sete", 5, "guerreiro"),
+    new Heroi ("Batata", 50, "monge"),
+    new Heroi ("Pie", 3, "ninja")
+]
+
+// Adicionando laço de repetição para demonstrar todos os persongens 
+personagens.forEach(personagem => personagem.exibirInfo())

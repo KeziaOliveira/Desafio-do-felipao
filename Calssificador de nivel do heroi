@@ -1,9 +1,10 @@
-//Nome do herói
+// Nome do herói
 let nome = "Kezia"
 
-//Classificador de nível do herói
+// Classificador de nível do herói
 let XP = 2001
 let XPT
+
  if ( XP < 1000 ) { XPT="Ferro" }
  else if ( XP <= 2000 ) { XPT="Bronze" }
  else if ( XP <= 5000 ) { XPT="Prata" }
@@ -11,4 +12,6 @@ let XPT
  else if ( XP <= 8000 ) { XPT="Platina" }
  else if ( XP <= 9000 ) { XPT="Ascendente" }
  else if ( XP <= 10000 ) { XPT="Imortal" }
+
+ // Mensagem a ser exposta
 console.log( "O herói de nome " +nome, "está no nível de " +XPT )

@@ -1,19 +1,21 @@
+// Determinando variáveis iniciais
 let vit = 200
 let der = 84
 
 aux=rank(vit,der)
 
-function rank( v,d ){
+// Gerando função a partir dos parâmetros e definindo cálculo
+function rank(v,d){
     R = v - d
 return R
 }
+    if (aux<10) {Nivel="Ferro"}
+    else if (aux <= 20) {Nivel="Bronze"}
+    else if (aux <= 50) {Nivel="Prata"}
+    else if (aux <= 80) {Nivel="Ouro"}
+    else if (aux <= 90) {Nivel="Diamante"}
+    else if (aux <= 100) {Nivel="Lendário"}
+    else if (aux >= 101) {Nivel="Imortal"}
 
-    if ( aux < 10 ) { Nivel = "Ferro" }
-    else if ( aux <= 20 ) { Nivel = "Bronze" }
-    else if ( aux <= 50 ) { Nivel = "Prata" }
-    else if ( aux <= 80 ) { Nivel = "Ouro" }
-    else if ( aux <= 90 ) { Nivel = "Diamante" }
-    else if ( aux <= 100 ) { Nivel = "Lendário" }
-    else if ( aux >= 101 ) { Nivel = "Imortal" }
-
+// Exibindo mensagem
 console.log ("O Herói tem de saldo de "+R, "está no nível de " +Nivel)
